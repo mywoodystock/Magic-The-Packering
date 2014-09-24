@@ -1,5 +1,7 @@
 package
 {
+	import flash.utils.getQualifiedClassName;
+	
 	/**
 	 * ...
 	 * @author Adam
@@ -10,10 +12,10 @@ package
 		{
 			var fullMessage:String = "";
 			
-			/*if (sender != null)
+			if (sender != null)
 			{
-				fullMessage += sender.prototype + " | ";
-			}*/
+				fullMessage += getQualifiedClassName(sender) + " -> ";
+			}
 			
 			fullMessage += message;
 			

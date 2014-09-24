@@ -30,6 +30,8 @@ package mvc.view.components.navigatiors
 		
 		public function MTPScreenNavigator() 
 		{
+			_screens = new Object();
+			
 			initScreens();
 		}
 		
